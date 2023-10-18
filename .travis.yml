@@ -1,0 +1,13 @@
+dist: jammy
+os: linux
+language: node_js
+node_js:
+  - 21
+
+cache: npm
+
+jobs:
+    name: Lint
+    script: npm run lint
+  - name: Test
+    script: npm run test -- --verbose
